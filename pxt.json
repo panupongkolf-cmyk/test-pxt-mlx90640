@@ -1,7 +1,7 @@
 {
-    "name": "pxt-mlx90640",
-    "version": "1.0.0",
-    "description": "High-performance MLX90640 Thermal Camera C++ Extension for micro:bit V2",
+    "name": "test-pxt-mlx90640",
+    "version": "0.0.1",
+    "description": "MLX90640 Thermal Camera Extension for micro:bit V2",
     "dependencies": {
         "core": "*",
         "bluetooth": "*"
@@ -10,6 +10,9 @@
         "README.md",
         "extension.ts",
         "extension.cpp"
+    ],
+    "testFiles": [
+        "test.ts"
     ],
     "public": true,
     "supportedTargets": [

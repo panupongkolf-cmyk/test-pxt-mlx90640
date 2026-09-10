@@ -14,7 +14,8 @@ namespace mlx90640 {
     //% block="get frame chunk %chunkIndex"
     //% shim=mlx90640::getChunk
     export function getChunk(chunkIndex: number): Buffer {
-        return null;
+        // ใช้ control.createBuffer เพื่อไม่ให้ Compiler พังเวลาคืนค่า Buffer
+        return control.createBuffer(192); 
     }
 
     //% block="get pixel temp at %pixelIndex"

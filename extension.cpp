@@ -11,13 +11,10 @@ namespace mlx90640 {
     }
 
     //%
-    Buffer getChunk(int chunkIndex) {
-        uint8_t dummy[192] = {0};
-        return pxt::mkBuffer(dummy, 192);
-    }
-
-    //%
-    int getPixelTemp(int pixelIndex) {
-        return 250;
+    void fillChunk(int chunkIndex, Buffer buf) {
+        if (NULL == buf) return;
+        
+        // โค้ดสำหรับคัดลอกข้อมูลลง Buffer จะอยู่ตรงนี้ในอนาคต
+        // เช่น memcpy(buf->data, source_data, 192);
     }
 }

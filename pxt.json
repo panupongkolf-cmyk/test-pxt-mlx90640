@@ -1,6 +1,6 @@
 {
     "name": "test-pxt-mlx90640",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "MLX90640 Thermal Camera Extension for micro:bit V2",
     "dependencies": {
         "core": "*",

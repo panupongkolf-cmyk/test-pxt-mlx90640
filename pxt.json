@@ -1,6 +1,6 @@
 {
     "name": "test-pxt-mlx90640",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "MLX90640 Thermal Camera Extension for micro:bit V2",
     "dependencies": {
         "core": "*",
@@ -9,7 +9,9 @@
     "files": [
         "README.md",
         "extension.ts",
-        "extension.cpp"
+        "extension.cpp",
+        "mlx_driver.ts",
+        "mlx_driver.cpp"
     ],
     "testFiles": [
         "test.ts"

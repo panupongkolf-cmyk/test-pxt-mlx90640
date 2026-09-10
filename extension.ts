@@ -2,25 +2,18 @@
 namespace mlx90640 {
     //% block="init MLX90640 sensor"
     //% shim=mlx90640::initSensor
-    export function initSensor(): boolean {
-        return true;
-    }
+    export function initSensor(): boolean { return true; }
 
     //% block="capture frame"
     //% shim=mlx90640::captureFrame
-    export function captureFrame(): void {
+    export function captureFrame(): void { }
+
+    //% block="create chunk buffer"
+    export function createChunkBuffer(): Buffer {
+        return control.createBuffer(192);
     }
 
-    //% block="get frame chunk %chunkIndex"
-    //% shim=mlx90640::getChunk
-    export function getChunk(chunkIndex: number): Buffer {
-        // ใช้ control.createBuffer เพื่อไม่ให้ Compiler พังเวลาคืนค่า Buffer
-        return control.createBuffer(192); 
-    }
-
-    //% block="get pixel temp at %pixelIndex"
-    //% shim=mlx90640::getPixelTemp
-    export function getPixelTemp(pixelIndex: number): number {
-        return 0;
-    }
+    //% block="fill chunk %chunkIndex into %buf"
+    //% shim=mlx90640::fillChunk
+    export function fillChunk(chunkIndex: number, buf: Buffer): void { }
 }
